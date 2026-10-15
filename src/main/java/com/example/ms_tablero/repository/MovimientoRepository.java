@@ -7,5 +7,7 @@ import java.util.List;
 
 public interface MovimientoRepository extends JpaRepository<Movimiento, Long> {
 
-    List<Movimiento> findByJugadorId(Long jugadorId);
+    List<Movimiento> findAllByOrderByIdAsc();
+
+    List<Movimiento> findByJugadorIdOrderByIdAsc(Long jugadorId);
 }

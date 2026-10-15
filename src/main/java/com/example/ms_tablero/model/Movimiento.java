@@ -26,7 +26,11 @@ public class Movimiento {
 
     private Integer posicionNueva;
 
+    /** true si la casilla de destino era una trampa y el jugador retrocedió. */
     private Boolean trampa;
+
+    /** true si el jugador llegó (o pasó) la casilla meta con este movimiento. */
+    private Boolean llegoAMeta;
 
     private LocalDateTime fecha;
 }
